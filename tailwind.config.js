@@ -11,6 +11,7 @@ module.exports = {
       },
       fontSize: {
         logo: "1.625rem",
+        header: "2.625rem",
       },
       fontFamily: {
         body: ["Poppins"],
