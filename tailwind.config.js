@@ -16,6 +16,16 @@ module.exports = {
       fontFamily: {
         body: ["Poppins"],
       },
+      spacing: {
+        440: "440px",
+        370: "370px",
+      },
+      borderRadius: {
+        hero: "100px 15px 15px",
+      },
+      boxShadow: {
+        btn: "0px 8px 15px rgba(50, 82, 223, 0.3)",
+      },
     },
   },
   variants: {
