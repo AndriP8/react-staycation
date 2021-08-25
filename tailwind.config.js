@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "jit",
+  mode: "",
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -23,10 +23,13 @@ module.exports = {
         440: "440px",
         460: "28.75rem",
         370: "370px",
+        365: "22.813rem",
+        500: "31.25rem",
         inherit: "inherit",
       },
       borderRadius: {
         hero: "100px 15px 15px",
+        heroSwap: "15px 15px 100px 15px",
       },
       boxShadow: {
         btn: "0px 8px 15px rgba(50, 82, 223, 0.3)",
