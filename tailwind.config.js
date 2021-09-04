@@ -22,8 +22,10 @@ module.exports = {
         body: ["Poppins"],
       },
       spacing: {
+        70: "4.5rem",
         215: "13.438rem",
         245: "15.313rem",
+        270: "16.875rem",
         440: "440px",
         460: "28.75rem",
         370: "370px",
@@ -37,6 +39,13 @@ module.exports = {
       },
       boxShadow: {
         btn: "0px 8px 15px rgba(50, 82, 223, 0.3)",
+      },
+      backgroundImage: (theme) => ({
+        stepper:
+          "url('data:image/svg+xml;utf8,<svg width:30 height:20 viewBox:0 0 30 20 fill:none xmlns:http://www.w3.org/2000/svg><path d:M2.62961 7.52668L7.82252 16.2306C8.46805 17.3126 9.94113 17.5354 10.8778 16.6927L27.1842 2.02177 stroke:white stroke-width:4 stroke-linecap:round/></svg>')",
+      }),
+      content: {
+        empty: "",
       },
     },
   },

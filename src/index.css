@@ -37,6 +37,10 @@
   @apply bg-primary text-lg text-white w-52 py-3 rounded cursor-pointer hover:bg-hoverPrimary;
 }
 
+.btn-light {
+  @apply bg-gray-200 text-lg text-gray-500 w-52 py-3 rounded cursor-pointer;
+}
+
 .input-group-text {
   @apply cursor-pointer p-0 rounded text-2xl w-11 h-11 flex justify-center items-center select-none text-white;
 }
@@ -51,4 +55,8 @@
 
 .form-control {
   @apply rounded-none outline-none shadow-none bg-gray-100 py-2 px-4 text-center h-11;
+}
+
+.form-payment {
+  @apply rounded-none outline-none shadow-none bg-gray-100 py-2 px-4 h-11 w-full;
 }
