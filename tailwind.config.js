@@ -1,5 +1,5 @@
 module.exports = {
-  mode: "",
+  mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -41,12 +41,35 @@ module.exports = {
         btn: "0px 8px 15px rgba(50, 82, 223, 0.3)",
       },
       backgroundImage: (theme) => ({
-        stepper:
-          "url('data:image/svg+xml;utf8,<svg width:30 height:20 viewBox:0 0 30 20 fill:none xmlns:http://www.w3.org/2000/svg><path d:M2.62961 7.52668L7.82252 16.2306C8.46805 17.3126 9.94113 17.5354 10.8778 16.6927L27.1842 2.02177 stroke:white stroke-width:4 stroke-linecap:round/></svg>')",
+        stepper: "url('assets/images/icons/icon-checklist.svg')",
       }),
       content: {
-        empty: "",
+        empty: "' '",
       },
+    },
+    zIndex: {
+      auto: "auto",
+      minus2: "-2",
+      minus1: "-1",
+      0: "0",
+      10: "10",
+      20: "20",
+      30: "30",
+      40: "40",
+      50: "50",
+    },
+    scale: {
+      0: "0",
+      50: ".5",
+      75: ".75",
+      90: ".9",
+      95: ".95",
+      100: "1",
+      105: "1.05",
+      110: "1.1",
+      115: "1.15",
+      125: "1.25",
+      150: "1.5",
     },
   },
   variants: {

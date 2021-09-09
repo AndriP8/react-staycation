@@ -60,3 +60,35 @@
 .form-payment {
   @apply rounded-none outline-none shadow-none bg-gray-100 py-2 px-4 h-11 w-full;
 }
+
+ol.stepper {
+  @apply flex items-center justify-center m-0 p-0;
+}
+
+li.stepper-li {
+  @apply relative flex items-center justify-center list-none w-14 h-14 rounded-full text-white text-2xl;
+}
+
+li.stepper-li::after {
+  @apply absolute content-empty z-10 w-14 h-14 rounded-full bg-stepper bg-center bg-no-repeat bg-medGreen scale-100 transition duration-300 ease-in-out;
+}
+
+li.stepper-li:not(:last-child) {
+  @apply mr-14;
+}
+
+li.stepper-li:not(:last-child)::before {
+  @apply content-empty z-minus2 top-1/2 left-1/2 absolute w-24 h-0.5 bg-gray-300;
+}
+
+li.stepper-li.active {
+  @apply bg-gray-300 text-gray-400;
+}
+
+li.stepper-li.active::after {
+  @apply z-minus1 bg-white border border-gray-300 scale-115;
+}
+
+li.stepper-li.active ~ li {
+  @apply text-gray-400 bg-gray-300 after:content-none;
+}
