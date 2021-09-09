@@ -13,7 +13,8 @@ import Footer from "../parts/Footer";
 import ItemDetails from "../json/itemDetails.json";
 export default class DetailsPage extends Component {
   componentDidMount() {
-    document.title = "Details Page";
+    window.scrollTo(0, 0);
+    document.title = "Staycation | Details Page";
   }
   render() {
     const breadcrumbList = [

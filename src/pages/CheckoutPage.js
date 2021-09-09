@@ -65,7 +65,7 @@ export default class CheckoutPage extends Component {
     return (
       <>
         <Header isCentered />
-        <Stepper steps={steps} initialStep="payment">
+        <Stepper steps={steps} initialStep="bookingInformation">
           {(prevStep, nextStep, currentStep, steps) => (
             <>
               <Numbering data={steps} current={currentStep} style={{ marginBottom: 50, marginTop: 50 }} />
